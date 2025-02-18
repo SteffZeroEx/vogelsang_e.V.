@@ -3,26 +3,34 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.classList.add("wf-active");
   });
 
-  const login = document.querySelector(".login");
+  const logins = document.querySelectorAll(".login")
+  for (const login of logins) {
+    login.addEventListener("click", openLogin); 
+    login.addEventListener("touchstart", openLogin);
+  }
+  
   const loginForm = document.querySelector(".loginForm");
-  login.addEventListener("click", (e) => {
+  const closeLogin = document.querySelector(".login-close");
+  
+  function openLogin(e) {
+    console.log("Login-Modal öffnet sich");
     const loginSctn = document.querySelector(".login-sctn");
-    e.preventDefault();
+  e.preventDefault();
     loginSctn.classList.add("login-flex");
     loginSctn.classList.remove("login-none");
-    const closeLogin = document.querySelector(".login-close");
-    closeLogin.addEventListener("click", (e) => {
-      e.preventDefault();
+
+    
+    closeLogin.addEventListener("click", closeLoginModal)
+      
+}
+function closeLoginModal(e) {
+    const loginSctn = document.querySelector(".login-sctn");
+    e.preventDefault();
       loginSctn.classList.remove("login-flex");
       loginSctn.classList.add("login-none");
-    });
-    window.addEventListener("click", (e) => {
-      if (!loginForm.contains(e.target) && e.target !== login && e.target !== closeLogin) {
-        loginSctn.classList.remove("login-flex");
-        loginSctn.classList.add("login-none");
-      }
-    });
-  });
+  
+}
+  
 
   const menueBtn = document.querySelector(".menue-btn");
   menueBtn.addEventListener("click", (e) => {
