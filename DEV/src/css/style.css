@@ -693,7 +693,7 @@ p {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-    width: clamp(300px, 3vw, 700px);
+  width: clamp(300px, 3vw, 700px);
 }
 
 .garden-card > div > h2 {
@@ -704,6 +704,68 @@ p {
   margin: 0 10px;
 }
 .garden-card img {
-  width: clamp(300px,40vw, 700px);
+  width: clamp(300px, 40vw, 700px);
   border-radius: inherit;
+}
+
+/*? === SCHEDULES === */
+
+.schedules-sctn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 300px;
+  column-gap: 10vw;
+  row-gap: 5%;
+  font-family: var(--font-serif);
+}
+.schedule-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-2);
+  border: solid 2px var(--border-color);
+  border-radius: 20px;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  box-shadow: 0 0 10px -5px var(--text-color);
+  width: 300px;
+  position: relative;
+  margin: 2vw 0;
+  
+}
+.schedule-cards svg {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.schedule-cards div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: #9db752;
+  border-radius: 18px 18px 0 0;
+  border-bottom: solid 0.5px var(--border-color);
+  color: var(--color-1);
+  width: 100%;
+}
+.schedule-cards h2 {
+  font-size: clamp(15px, 2vw, 18px);
+
+  left: 60px;
+}
+.schedule-informations {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+.schedule-informations {
+  list-style: none;
+}
+.schedule-informations > li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 0.9em;
 }
