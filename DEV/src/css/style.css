@@ -834,3 +834,28 @@ p {
   border-radius: 5px;
   padding: 0.5rem 2rem;
 }
+
+/*? === IMPRESSUM === */
+
+.impressum, .data-privacy {
+  font-family: var(--font-serif);
+  color: var(--text-color);
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.impressum h1, .data-privacy h1 {
+  text-decoration: underline;
+  margin: 20px 0;
+  font-size: clamp(24px, 2vw, 32px);
+}
+
+.impressum h2, .data-privacy h2 {
+  font-size: clamp(20px, 2vw, 24px);
+}
+
+.impressum p, .data-privacy p {
+  font-size: clamp(16px, 2vw, 18px);
+}
