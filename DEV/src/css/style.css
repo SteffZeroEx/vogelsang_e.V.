@@ -496,7 +496,6 @@ html.wf-active body {
 .news-sctn h2 {
   text-decoration: underline;
   margin-bottom: 20px;
-
   font-size: clamp(22px, 4vw, 35px);
   font-family: var(--font-sans);
 }
@@ -554,12 +553,14 @@ html.wf-active body {
   border-radius: 10px;
   color: var(--text-color);
   position: relative;
+   box-shadow: 0 0 10px -5px var(--text-color);
 }
 
 .article-news h3 {
   font-family: var(--font-sans);
   padding: 5px 0;
   text-decoration: underline;
+  text-align: center;
 }
 .article-news img {
   border-top: 2px solid var(--border-color);
@@ -570,6 +571,7 @@ html.wf-active body {
   font-size: clamp(14px, 1vw, 18px);
   margin-top: 20px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .article-news .user,
@@ -586,4 +588,81 @@ html.wf-active body {
 }
 .date {
   right: 1%;
+}
+
+/*? === ABOUT US === */
+
+.aboutUs-sctn, .contactPerson, .downloads, .updates {
+  color: var(--text-color);
+  font-family: var(--font-serif);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin: 20px auto 20px auto;
+  row-gap: 10px;
+}
+.aboutUs-sctn h2 {
+  font-size: clamp(20px, 2vw, 24px);
+}
+
+p{
+  font-size: clamp(14px, 2vw, 17px);
+  margin-left: 5px;
+}
+
+.contactPerson .personIntro{
+text-align: center;
+margin-top: 20px;
+}
+.personIntro h2, .downloads h2, .updates h2 {
+    font-size: clamp(20px, 2vw, 24px);
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.personCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.person-card {
+  border: 2px solid var(--border-color);
+  width: 150px;
+  padding: 5px 0 5px 0;
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--card-bg-color);
+  font-size: clamp(16px, 2vw, 18px);
+  box-shadow: 0 0 10px -5px var(--text-color);
+}
+
+.person-card img {
+  border-bottom: 2px solid var(--border-color);
+  width: 150px;
+  height: 150px;
+}
+
+.downloads, .updates {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.downloads ul {
+  background-color: var(--card-bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  list-style-position: inside;
+  padding: clamp(15px, 2vw, 20px);
+}
+
+.updates button {
+  margin: 2vw 0;
 }
