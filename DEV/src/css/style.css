@@ -732,7 +732,6 @@ p {
   width: 300px;
   position: relative;
   margin: 2vw 0;
-  
 }
 .schedule-cards svg {
   width: 50px;
@@ -768,4 +767,70 @@ p {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
   font-size: 0.9em;
+}
+
+/*? === CONTACT === */
+
+.contactArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--text-color);
+  font-family: var(--font-serif);
+  margin-top: 5%;
+}
+.contactArea h1 {
+  font-size: clamp(24px, 3vw, 32px);
+}
+.contact-sctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: clamp(16px, 2vw, 20px);
+  margin-bottom: 20px;
+}
+.contactItems > p {
+  font-size: 0.8em;
+}
+
+.contactItems ul {
+  list-style: none;
+}
+.maps {
+  width: clamp(280px, 30vw, 500px);
+  height: clamp(250px, 30vw, 500px);
+  border: solid 2px var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px -5px var(--text-color);
+  margin-bottom: 20px;
+}
+
+.contact-field {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(16px, 2vw, 20px);
+  row-gap: 10px;
+  background-color: var(--card-bg-color);
+  box-shadow: 0 0 10px -5px var(--text-color);
+}
+
+.contact-field input,
+.contact-field textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
 }
