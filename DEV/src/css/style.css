@@ -27,7 +27,6 @@
   scroll-behavior: smooth;
 }
 html {
-
   ::-webkit-scrollbar {
     width: 12px;
   }
@@ -553,7 +552,7 @@ html.wf-active body {
   border-radius: 10px;
   color: var(--text-color);
   position: relative;
-   box-shadow: 0 0 10px -5px var(--text-color);
+  box-shadow: 0 0 10px -5px var(--text-color);
 }
 
 .article-news h3 {
@@ -592,7 +591,10 @@ html.wf-active body {
 
 /*? === ABOUT US === */
 
-.aboutUs-sctn, .contactPerson, .downloads, .updates {
+.aboutUs-sctn,
+.contactPerson,
+.downloads,
+.updates {
   color: var(--text-color);
   font-family: var(--font-serif);
   display: flex;
@@ -606,17 +608,19 @@ html.wf-active body {
   font-size: clamp(20px, 2vw, 24px);
 }
 
-p{
+p {
   font-size: clamp(14px, 2vw, 17px);
   margin-left: 5px;
 }
 
-.contactPerson .personIntro{
-text-align: center;
-margin-top: 20px;
+.contactPerson .personIntro {
+  text-align: center;
+  margin-top: 20px;
 }
-.personIntro h2, .downloads h2, .updates h2 {
-    font-size: clamp(20px, 2vw, 24px);
+.personIntro h2,
+.downloads h2,
+.updates h2 {
+  font-size: clamp(20px, 2vw, 24px);
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -649,10 +653,11 @@ margin-top: 20px;
   height: 150px;
 }
 
-.downloads, .updates {
-display: flex;
-justify-content: center;
-align-items: center;
+.downloads,
+.updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .downloads ul {
@@ -665,4 +670,40 @@ align-items: center;
 
 .updates button {
   margin: 2vw 0;
+}
+
+/*? === GARDENS === */
+
+.gardens-sctn {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw 0;
+}
+.garden-card {
+  border: 2px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: 2vw auto 2vw auto;
+  border-radius: 10px;
+}
+.garden-card > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+    width: clamp(300px, 3vw, 700px);
+}
+
+.garden-card > div > h2 {
+  margin: 0 10px;
+}
+
+.garden-card > div > p {
+  margin: 0 10px;
+}
+.garden-card img {
+  width: clamp(300px,40vw, 700px);
+  border-radius: inherit;
 }
