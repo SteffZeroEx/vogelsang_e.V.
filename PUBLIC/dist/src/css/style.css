@@ -102,19 +102,19 @@ html.wf-active body {
   cursor: pointer;
 }
 
+
+
 /*? === GENERAL STYLING === */
 /*?  DESKTOP NAVIGATION  */
 .nav {
   background-color: var(--bg-color);
   height: 80px;
-
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 10;
-  padding: 5px 0 5px 0;
   border-bottom: solid 5px var(--accent-color);
   font-family: var(--font-serif);
   font-weight: bold;
@@ -129,11 +129,13 @@ html.wf-active body {
 
 .nav > ul {
   display: flex;
+  align-items: center;
   list-style: none;
 }
 .nav > ul > li {
   padding: 0 0.4rem 0 0.4rem;
   transition: all 0.3s ease;
+  height: 100%;
 }
 .nav a {
   text-decoration: none;
@@ -879,4 +881,13 @@ p {
 
 .impressum p, .data-privacy p {
   font-size: clamp(16px, 2vw, 18px);
+}
+
+
+/*? OTHERS */
+
+.active {
+
+  color: var(--hover-color) !important;
+  text-decoration: underline !important;
 }
