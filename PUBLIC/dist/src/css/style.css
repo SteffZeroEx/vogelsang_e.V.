@@ -478,10 +478,24 @@ html.wf-active body {
   }
 }
 
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (max-device-width: 1023px) and (orientation: landscape) {
   .hero-section svg {
     display: none;
   }
+  .hero-section {
+    height: 100vh;
+  }
+  .hero-section h1 {
+  font-size: clamp(20px, 3vw, 65px);
+  padding: 2vw 6vw 1vw 6vw;
+  letter-spacing: 1px;
+}
+.hero-section p {
+
+  font-size: clamp(12px, 2vh, 35px);
+  padding: 2vw 6vw;
+
+}
 }
 
 /*? GENERAL SECTION & NEWS SECTION */
