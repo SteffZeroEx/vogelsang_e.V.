@@ -33,7 +33,7 @@
       <img class="nav-logo" src="../assets/img/logo_vogelsang.webp" alt="Vogelsang Logo" />
       <ul>
         <li>
-          <a href="/DEV/index.html">Startseite</a>
+          <a href="/dist/index.html">Startseite</a>
         </li>
         <li>
           <a href="./aboutUs.html">Über uns</a>
@@ -62,7 +62,7 @@
       <span class="menue-btn">&#9776; </span>
       <ul class="menue-list">
         <li>
-          <a href=".../index.html"
+          <a href="/dist/index.html"
             ><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8b6f4f">
               <path
                 d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z" /></svg
@@ -111,97 +111,71 @@
         </li>
       </ul>
     </nav>
-
-<!--? === ABOUT US SECTION === -->
-    <section class="aboutUs-sctn">
-      <h2>Über uns</h2>
-      <p>
-        Willkommen beim Gartenverein "Vogelsang e.V." in Salzwedel! Unser Verein wurde im Jahr 1970 gegründet und hat
-        sich seitdem zu einer blühenden Gemeinschaft von Gartenliebhabern entwickelt.
-      </p>
-      <h2>Unsere Geschichte</h2>
-      <p>
-        Unsere Geschichte begann vor über 50 Jahren, als eine Gruppe von Nachbarn beschloss, einen Ort zu schaffen, an
-        dem sie ihre Leidenschaft für das Gärtnern teilen konnten. Sie gründeten den Gartenverein "Vogelsang e.V." und
-        begannen mit der Gestaltung der ersten Parzellen. <br /><br />Im Laufe der Jahre wuchs unser Verein stetig.
-        Heute umfasst unsere Anlage [Anzahl] wunderschön gepflegte Kleingärten. Jeder Garten ist einzigartig und
-        spiegelt die Persönlichkeit seiner Gärtner wider.
-      </p>
-      <h2>Unsere Mission</h2>
-      <p>
-        Unsere Mission ist es, einen Ort zu schaffen, an dem Menschen aller Altersgruppen und Hintergründe ihre Liebe
-        zur Natur entdecken und pflegen können. Wir glauben, dass Gärtnern mehr ist als nur ein Hobby - es ist eine
-        Möglichkeit, eine Verbindung zur Erde herzustellen, Stress abzubauen und eine Gemeinschaft zu fördern.
-      </p>
-      <h2>Werden Sie Mitglied</h2>
-      <p>
-        Wir laden Sie ein, Teil unserer Gemeinschaft zu werden. Egal, ob Sie ein erfahrener Gärtner sind oder gerade
-        erst anfangen, bei uns sind Sie willkommen. Kontaktieren Sie uns unter [Telefonnummer] oder per
-        <a href="/contact.html">Kontaktformular</a>, um mehr über die Mitgliedschaft zu erfahren. <br /><br />Wir freuen
-        uns darauf, Sie in unserem Gartenverein "Vogelsang e.V." begrüßen zu dürfen!
-      </p>
-    </section>
-
-<!--? CONTACT PERSONS -->
-    <section class="contactPerson">
-      <div class="personIntro">
-        <h2>Ansprechpartner</h2>
-        <p>
-          Unser Vorstand besteht aus engagierten Mitgliedern, die sich für die Förderung des Gartenvereins "Vogelsang
-          e.V." einsetzen. Sie arbeiten unermüdlich daran, unseren Verein zu leiten und unsere Gemeinschaft zu stärken.
-        </p>
-      </div>
-      <div class="personCards">
-        <article class="person-card">
-          <img class="mPicture" src="../assets/icons/profil_woman.png" alt="" />
-
-          <h3 class="personName">Name</h3>
-          <p class="position">Position</p>
-        </article>
-        <article class="person-card">
-          <img class="mPicture" src="../assets/icons/profil_man.png" alt="" />
-
-          <h3 class="personName">Name</h3>
-          <p class="position">Position</p>
-        </article>
-        <article class="person-card">
-          <img class="mPicture" src="https://cdn.pixabay.com/photo/2013/07/13/12/11/caveman-159359_640.png" alt="" />
-
-          <h3 class="personName">Name</h3>
-          <p class="position">Position</p>
-        </article>
-        <article class="person-card">
-          <img class="mPicture" src="https://cdn.pixabay.com/photo/2016/06/16/08/51/caveman-1460898_640.png" alt="" />
-
-          <h3 class="personName">Name</h3>
-          <p class="position">Position</p>
-        </article>
-      </div>
-    </section>
-
-<!--? DOWNLOADS -->
-      <section class="downloads">
-        <h2>Dokumente</h2>
-        <p>
-          In unserem Dokumentenbereich finden Sie eine Vielzahl von Ressourcen, darunter Vereinsstatuten,
-          Mitgliedsanträge und andere wichtige Formulare.
-        </p>
-        <ul>
-          <li><a download="" href="../assets/documents/Garten_Humor.pdf">Garten Humor PDF</a></li>
-          <li><a download="" href="../assets/documents/Muster Gartensatzung.pdf">Muster Gartensatzung</a></li>
-          <li><a download="" href="../assets/documents/Muster Anmeldung Gartenverein.pdf">Muster Anmeldung Gartenverein</a></li>
+<!-- ? SCHEDULES SECTION -->
+    <section class="schedules-sctn">
+      <article class="schedule-cards">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff00" viewBox="0 -960 960 960">
+            <path
+              d="M444-792v-120h72v120h-72Zm0 744v-120h72v120h-72Zm348-396v-72h120v72H792Zm-744 0v-72h120v72H48Zm678-231-51-51 84-87 54 54-87 84ZM202-148l-54-54 86-83 51 51-83 86Zm557 0-84-86 51-51 87 83-54 54ZM234-675l-86-84 54-54 83 87-51 51Zm246 435q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm-.25-71Q550-311 599-360.5t49-119.75q0-70.24-48.75-119-48.76-48.75-119-48.75Q410-648 361-599.25q-49 48.76-49 119 0 70.25 48.75 119.75 48.76 49.5 119 49.5ZM481-481Z" />
+          </svg>
+          <h2>Jahresveranstaltungen</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
         </ul>
-      </section>
-
-      <section class="updates">
-        <h2>Aktuelles</h2>
-        <p>Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Updates von unserem Gartenverein "Vogelsang
-            e.V.". Hier finden Sie Informationen über bevorstehende Veranstaltungen, Vereinsneuigkeiten und mehr.
-          </p>
-        <a href="./news.html"><button class="btn--1">Alle News</button></a>
-      </section>
-      
-    
+      </article>
+      <article class="schedule-cards">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#f0f0db"><path d="M324.21-408q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm156 0q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm156 0q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Z"/></svg>
+          <h2>Vorstandsversammlung</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
+        </ul>
+      </article>
+      <article class="schedule-cards">
+        <div>
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8b6f4f"><path d="M278.4-144q-35.69 0-61.04-25.43Q192-194.86 192-230v-395l-49-119H48v-72h144l59 144h589q14 0 20.5 11.5t.5 23.5L753-406q48 6 79.5 42.94 31.5 36.93 31.5 87.13 0 54.93-38.5 93.43Q787-144 732.22-144q-55.72 0-93.97-38.69Q600-221.39 600-276.13q0-18.87 5-36.87 5-18 16-34l-151-17-121 182q-11.8 18.1-30.4 28.05Q300-144 278.4-144ZM677-413l88-187H280l45 110q8 18 23.39 30.1Q363.78-447.79 384-446l293 33ZM277-216q2.67 0 12-6l101-150q-41-4-75-24.5T264-454v224.39q0 5.61 4 9.61 4 4 9 4Zm455 0q25 0 42.5-17.5T792-276q0-25-17.5-42.5T731.51-336q-24.51 0-42.01 17.5Q672-301 672-275.51q0 24.51 17.5 42.01Q707-216 732-216Zm-55-197-293-33 293 33Z"/></svg>          <h2>Arbeitseinsätze</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
+        </ul>
+      </article>
+      <article class="schedule-cards">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#f0f0db"><path d="M480-240q-58 0-112 18.5T268-168h424q-45-35-99.5-53.5T480-240Zm-264 19q55-45 123.5-68T480-312q72 0 140.5 22.5T744-221v-475H216v475Zm263.76-139Q420-360 378-402.24q-42-42.24-42-102T378.24-606q42.24-42 102-42T582-605.76q42 42.24 42 102T581.76-402q-42.24 42-102 42Zm.24-72q30 0 51-21t21-51q0-30-21-51t-51-21q-30 0-51 21t-21 51q0 30 21 51t51 21ZM216-96q-29 0-50.5-21.5T144-168v-528q0-29 21.5-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm264-406Zm.5 334H692 268h212.5Z"/></svg>
+          <h2>Mitgliederversammlung</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
+        </ul>
+      </article>
+      <article class="schedule-cards">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5985E1"><path d="M508-218q8-1 14-7.5t6-16.5q0-11-8-18t-19-5q-58 8-106.5-27T337-387q-1-9-7.5-15t-15.5-6q-11 0-18.5 8t-5.5 19q11 78 74 126t144 37ZM480-96q-130 0-221-91t-91-221q0-97 74.5-205T480-864q166 150 239 257t73 199q0 130-91 221T480-96Zm0-72q100 0 170-70t70-170q0-68-54-149T480-769Q348-638 294-557t-54 149q0 100 70 170t170 70Zm0-312Z"/></svg>
+          <h2>Wasser an-/abstellen</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
+        </ul>
+      </article>
+      <article class="schedule-cards">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFF55"><path d="m480-334 130-194H506l72-264H360v312h120v146ZM408-96v-312H288v-456h384l-72 264h144L408-96Zm72-384H360h120Z"/></svg>
+          <h2>Strom an-/abstellen</h2>
+        </div>
+        <ul class="schedule-informations">
+          <li>~placeholder Text~</li>
+          <li>~placeholder Text~</li>
+        </ul>
+      </article>
+    </section>
 
     <!--? LOGIN SECTION -->
     <section class="login-sctn login-none">
@@ -221,7 +195,7 @@
               <p>Passwort anzeigen</p>
             </div>
           </fieldset>
-          <button type="button">Einloggen</button>
+          <button class="btn--1" type="button">Einloggen</button>
           <p id="falseLogin"></p>
         </form>
       </div>
@@ -247,15 +221,15 @@
         <div class="footLinks">
           <ul>
             <li>
-              <a title="" href="./legalNotice">Impressum |</a>
+              <a title="" href="./legalNotice.html">Impressum |</a>
             </li>
 
             <li>
-              <a title="" href="./dataPrivacy">Datenschutz |</a>
+              <a title="" href="./dataPrivacy.html">Datenschutz |</a>
             </li>
 
             <li>
-              <a title="" href="./contact">Kontakt</a>
+              <a title="" href="./contact.html">Kontakt</a>
             </li>
           </ul>
         </div>
