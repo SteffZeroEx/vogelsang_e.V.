@@ -483,17 +483,17 @@ html.wf-active body {
     display: none;
   }
   .hero-section {
-    height: 100vh;
+    height: 100dvh;
   }
   .hero-section h1 {
   font-size: clamp(20px, 3vw, 65px);
-  padding: 2vw 6vw 1vw 6vw;
+  padding: 2vw 6vw .5vw 6vw;
   letter-spacing: 1px;
 }
 .hero-section p {
 
   font-size: clamp(12px, 2vh, 35px);
-  padding: 2vw 6vw;
+  padding: 1vw 6vw;
 
 }
 }
