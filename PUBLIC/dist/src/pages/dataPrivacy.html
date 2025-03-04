@@ -226,18 +226,18 @@
         <span class="login-close">&#x1F5D9;</span>
         <form class="loginFormCtn" action="submit" method="get">
           <fieldset>
-            <label title="" for="username">Benutzername:</label>
-            <input title="" id="username" type="text" placeholder="Name" />
+            <label  for="username">Benutzername:</label>
+            <input id="usernameInput" type="text" placeholder="Name" />
             <p class="error-user"></p>
-            <label title="" for="password">Passwort:</label>
-            <input title="" id="password" type="password" placeholder="Passwort" />
+            <label  for="password">Passwort:</label>
+            <input value="VorstandSaw"  id="passwordInput" type="password" placeholder="Passwort" />
             <p class="error-pw"></p>
             <div class="togglePw">
-              <input id="togglePassword" title="" type="checkbox" placeholder="ShowPassword" />
+              <input id="togglePassword" type="checkbox" placeholder="ShowPassword" />
               <p>Passwort anzeigen</p>
             </div>
           </fieldset>
-          <button class="btn--1" type="button">Einloggen</button>
+          <button id="loginBtn" class="btn--1" type="button">Einloggen</button>
           <p id="falseLogin"></p>
         </form>
       </div>
